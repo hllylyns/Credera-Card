@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600|Roboto:400,500');
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-align: left;
+}
+
+.card{
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 3px 3px 18px -1px rgba(200,200,200,1);
+}
+
+.text{
+  padding: 2rem;
+}
+
+.thumbnail{
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.thumbnail img{
+  width: 100%;
+}
+
+.line {
+  height: 4px;
+  background-color: #F2552F;
+}
+
+.headline{
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 14pt;
+  color: #0E0E0E;
+}
+
+h4{
+  margin: 0 0 3px 0;
+  text-transform: uppercase;
+  font-size: 8pt;
+}
+
+.date{
+  letter-spacing: .015rem;
+  color: #B2B2B2;
+}
+
+.summary{
+  margin: 1.5rem 0 1.5rem 0;
+  line-height: 1.33rem;
+  font-size: 12pt;
+  color: #717171;
+}
+
+.link {
+  color: #F2552F;
+}
+
+/* at about 750-800px, should take up half page
+at about 500px, should go to full page */
+
+@media (max-width: 800px){
+  .card{
+    width: 40vw;
+  }
+}
+@media (max-width: 500px){
+  .card{
+    width: 90vw;
+  }
+}
